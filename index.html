@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <title>Aditya Karedla</title>
+    </head>
+    <body>
+        <header class="header">
+            <a href="index.html" class="logo">Aditya's <span>Portfolio</span></a>
+            <nav class="navbar">
+                <a href="#home">Home</a>
+                <a href="#about" >About</a>
+                <a href="#skillset">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact Me</a>
+            </nav>
+            <a class="menu"><i class='bx bx-menu' id="menu-icon"></i></a>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h2>Hello Everyone👋!</h2>
+                <h1>I'm <span id="prof-name">Aditya Karedla</span> 🧑🏽‍💻</h1>
+                <h2>And I'm an aspiring <span id="prof-role">Software Developer</span>🚀</h2>
+                <br>
+                <p>To utilize my skills as a full stack and software developer 
+                    to contribute to the development of cutting-edge applications, 
+                    solve complex problems, and continuously enhance user experiences through innovative 
+                    and efficient software solutions.
+                </p>
+                <div class="social-media">
+                    <a href="https://instagram.com/aditya_karedla?igshid=MzNlNGNkZWQ4Mg" target="_blank"><i class='bx bxl-instagram'></i></a>
+                    <a href="mailto:aditya.official1302@gmail.com" target="_blank"><i class='bx bxl-gmail'></i></a>
+                    <a href="https://github.com/adityakaredla" target="_blank"><i class='bx bxl-github'></i></a>
+                    <a href="https://www.linkedin.com/in/aditya-lakshmi-narayana-karedla-223758201" target="_blank"><i class='bx bxl-linkedin-square'></i> </a>
+                </div>
+                <div class="download-resume">
+                <a href="Aditya's Resume.pdf" download="Aditya's resume.pdf" target="_blank" class="download-resume">Download Resume</a>
+                </div>
+            </div>
+            <div class="profile-pic">
+                <img src="profile-pic.jpg" class="profile-pic" alt="My Photo">
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="about-pic.png">
+            </div>
+            <div class="info">
+                <h1 class="info-heading"><i class='bx bxs-info-circle'></i>About <span id="me">Me</span></h1>
+                <p>Hello, I'm Aditya, currently in my fourth year of studying B.Tech (Honors) in the IT branch at JNTUGV Vizianagaram. My ultimate goal is to become a skilled Full Stack developer, and I'm incredibly passionate about building full stack applications.
+                    The world of AI and ML fascinates me, and I'm always eager to explore new technologies and learn more about them. 
+                    With a current CGPA of 8.38, I strive for academic excellence while actively pursuing my interests in the field. 
+                    I'm excited about the opportunities ahead and the chance to contribute to the ever-evolving world of technology.
+                </p>
+            </div>
+        </section>
+        <div class="skillset" id="skillset">
+            <div class="skills">
+                <h1>Skills</h1>
+                <div class="lang">
+                    <span>C</span>
+                    <span>Python</span>
+                    <span>Java</span>
+                    <span>HTML5</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>SQL</span>
+                    <span>MongoDB</span>
+                    <span>API</span>
+                    <span>WebScraping</span>
+                    <span>BeautifulSoup</span>
+                    <span>Data Science</span>
+                </div>
+            </div>
+        </div>
+        <section class="projects" id="projects">
+            <h1 id="project-head">Latest Projects</h1>
+            <div class="project-container">
+                <div class="project1">
+                    <h1><i class='bx bxl-twitter' ></i> Data Scraping Tool for Twitter Data</h1>
+                    <p>
+                        A tool to scrape Twitter data from it's alternate private frontend known as 
+                        Nitter, A privacy friendly and censorship-resistant version of Twitter.
+                        This exceptional tool offers a seamless and lightning-fast experience,
+                        allowing users to retrieve comprehensive data related to any requested topic. 
+                        With its robust capabilities, 
+                        it can extract a vast range of information, including tweets, user profiles
+                    </p>
+                </div>
+                <div class="project2">
+                    <h1><i class='bx bxs-bot'></i> Chatbot using openai GPT3.5 API</h1>
+                    <p>
+                        A private chatbot that answers the queries of the user by utilising the
+                        openai's powerful GPT3.5 API extension. It basically sends the Query through the API
+                        and fetches the response and displays it to the user
+                    </p>
+                </div>
+                <div class="project3">
+                    <h1><i class='bx bxs-music'></i> Animated Music Player</h1>
+                    <p>
+                        It is an animated music player where 3d animated characters dance
+                        for their respective songs.the application is built using basic HTML,CSS
+                        and JS The Character dance animations were designed using Blender and Mixamo
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+                <h1>Contact Me</h1>
+                <form>
+                    <div class="input-box">
+                        <input type="text" id='name_of_sender' placeholder="Name">
+                        <input type="text" maxlength="10" id='ph_no'placeholder="Phone Number">
+                    </div>
+                    <div class="input-box">
+                        <input type="text" id='subject'placeholder="Subject">
+                        <textarea rows="10" cols="30" id="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <div>
+                        <input type="button" value="Prepare Message" class="msg" onclick="contactMe()">
+                    </div>
+                </form>
+        </section>
+        <div class="footer">
+            <div class="icons">
+                <a href="https://github.com/adityakaredla" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/aditya-lakshmi-narayana-karedla-223758201" target="_blank"><i class='bx bxl-linkedin-square'></i> </a>
+            </div>
+            <p> Made by Aditya Karedla | Copyright &copy; by Aditya | All rights reserved</p>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
